@@ -16,9 +16,9 @@ namespace OverSurgeryUnitTest
             Assert.AreEqual("Done", resp);
 
             Patient pat = new Patient();
-            pat.Name = "Jack";
+            pat.Name = "Jack Sparrow";
             pat.Age = 23;
-            pat.Mykad = "123456789012";
+            pat.Mykad = "091209102309";
 
             PatientHandler pHnd = new PatientHandler();
             int resp2 = pHnd.addNewPatient(dbC.getConn(), pat);

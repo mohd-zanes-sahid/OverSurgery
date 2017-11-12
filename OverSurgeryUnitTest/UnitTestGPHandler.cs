@@ -12,7 +12,7 @@ namespace OverSurgeryUnitTest
         {
             DbConnector dbC = new DbConnector();
             string resp = dbC.connect();
-            Assert.AreEqual("Done", resp);
+            Assert.AreEqual("NotDone", resp);
 
             GeneralPractitioner gp = new GeneralPractitioner();
             gp.Name = "Will Smith";
